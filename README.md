@@ -1,4 +1,5 @@
-# welcome-ios [![Build Status](https://travis-ci.org/feedhenry-templates/welcome-ios.png)](https://travis-ci.org/feedhenry-templates/welcome-ios)
+# welcome-ios 
+[![Build Status](https://travis-ci.org/feedhenry-templates/welcome-ios.png)](https://travis-ci.org/feedhenry-templates/welcome-ios)
 
 > Swift version is available [here](https://github.com/feedhenry-templates/welcome-ios-swift).
 
