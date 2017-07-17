@@ -16,6 +16,22 @@
         NSLog(@"initialized OK");
     } AndFailure:^(FHResponse *response) {
         NSLog(@"initialize fail, %@", response.rawResponseAsString);
+        NSString * message = @"Please fill in fhconfig.plist file.";
+        if (response.parsedResponse) {
+            message = [response.parsedResponse objectForKey:@"msg"];
+        }
+        UIAlertController * alert = [UIAlertController
+                                     alertControllerWithTitle:@"Failure"
+                                     message:message
+                                     preferredStyle:UIAlertControllerStyleAlert];
+
+        UIAlertAction* okAction = [UIAlertAction
+                                   actionWithTitle:@"Ok, roger that!"
+                                   style:UIAlertActionStyleDefault
+                                   handler:^(UIAlertAction * action) {}];
+
+        [alert addAction:okAction];
+        [self.window.rootViewController presentViewController:alert animated:YES completion:nil];
     }];
     
     return YES;
