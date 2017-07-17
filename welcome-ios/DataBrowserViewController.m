@@ -81,9 +81,13 @@
         _loading.hidden = YES;
         
         // Show user alert
+        NSString * message = @"Oops, something went wrong";
+        if (res.parsedResponse) {
+            message = [res.parsedResponse objectForKey:@"msg"];
+        }
         UIAlertController * alert = [UIAlertController
                                      alertControllerWithTitle:@"Failure"
-                                     message:@"Oops, something went wrong"
+                                     message:message
                                      preferredStyle:UIAlertControllerStyleAlert];
         
         UIAlertAction* okAction = [UIAlertAction
