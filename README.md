@@ -1,5 +1,6 @@
 # welcome-ios 
-[![Build Status](https://travis-ci.org/feedhenry-templates/welcome-ios.png)](https://travis-ci.org/feedhenry-templates/welcome-ios)
+
+[![circle-ci](https://img.shields.io/circleci/project/github/feedhenry-templates/welcome-ios/master.svg)](https://circleci.com/gh/feedhenry-templates/welcome-ios)
 
 > Swift version is available [here](https://github.com/feedhenry-templates/welcome-ios-swift).
 
