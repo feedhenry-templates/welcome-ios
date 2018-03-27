@@ -1,0 +1,28 @@
+<?xml version='1.0'?>
+<licenseSummary>
+    <project>welcome-ios</project>
+    <version>0.0.0</version>
+    <license>Apache-2.0</license>
+    <dependencies>
+        <dependency>
+            <packageName>FH</packageName>
+            <version>5.0.0</version>
+            <licenses>
+                <license>
+                    <name>Apache License 2.0</name>
+                    <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+                </license>
+            </licenses>
+        </dependency>
+        <dependency>
+            <packageName>SWRevealViewController</packageName>
+            <version>2.3</version>
+            <licenses>
+                <license>
+                    <name>MIT License</name>
+                    <url>http://www.opensource.org/licenses/MIT</url>
+                </license>
+            </licenses>
+        </dependency>
+    </dependencies>
+</licenseSummary>
